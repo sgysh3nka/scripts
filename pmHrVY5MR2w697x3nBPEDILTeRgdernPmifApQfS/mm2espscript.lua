@@ -41,8 +41,8 @@ function IsAlive(Player)
 	end
 end
 
-local function createText()
-    local TextLabel = Instance.new("TextLabel")
+function CreateTextWaterMark()
+    TextLabel = Instance.new("TextLabel")
     TextLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     TextLabel.AnchorPoint = Vector2.new(1, 0)
     TextLabel.Position = UDim2.new(1, -10, 0, 10)
@@ -68,5 +68,5 @@ RunService.RenderStepped:connect(function()
 	end
 	CreateHighlight()
 	UpdateHighlights()
-	createText()
+	CreateTextWaterMark()
 end)
