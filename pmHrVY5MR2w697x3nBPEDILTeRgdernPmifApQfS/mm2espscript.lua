@@ -41,35 +41,6 @@ function IsAlive(Player)
 	end
 end
 
-function createVisibleThroughWallsTextLabel(playerName, position)
-    label = Instance.new("TextLabel")
-    label.Text = playerName
-    label.Size = UDim2.new(0, 200, 0, 50)
-    label.Position = UDim2.new(0, position.X, 0, position.Y)
-    label.TextSize = 20
-    label.TextColor3 = Color3.new(1, 1, 1)
-    label.BackgroundTransparency = 1
-    label.Parent = game.Workspace
-end
-
-local player = game.Players:GetPlayerFromCharacter(script.Parent)
-if player then
-    createVisibleThroughWallsTextLabel(player.Name, Vector2.new(0, 0))
-end
-
-function CreateTextWaterMark() -- may not work on phones
-    TextLabel = Instance.new("TextLabel")
-    TextLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    TextLabel.AnchorPoint = Vector2.new(1, 0)
-    TextLabel.Position = UDim2.new(1, -10, 0, 10)
-    TextLabel.Size = UDim2.new(0, 200, 0, 50)
-    TextLabel.Text = "sgysh3nkaHub"
-    TextLabel.TextSize = 24
-    TextLabel.TextColor3 = Color3.new(1, 1, 1)
-    TextLabel.BackgroundTransparency = 1
-    TextLabel.ZIndex = 2
-end
-
 
 RunService.RenderStepped:connect(function()
 	roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
@@ -84,5 +55,8 @@ RunService.RenderStepped:connect(function()
 	end
 	CreateHighlight()
 	UpdateHighlights()
-	CreateTextWaterMark()
+        end
+
+print("MM2 Esp Script by sgysh3nka")
+primt("Working!")
 end)
