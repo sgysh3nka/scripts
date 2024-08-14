@@ -41,6 +41,22 @@ function IsAlive(Player)
 	end
 end
 
+local function createVisibleThroughWallsTextLabel(playerName, position)
+    local label = Instance.new("TextLabel")
+    label.Text = playerName
+    label.Size = UDim2.new(0, 200, 0, 50)
+    label.Position = UDim2.new(0, position.X, 0, position.Y)
+    label.TextSize = 20
+    label.TextColor3 = Color3.new(1, 1, 1)
+    label.BackgroundTransparency = 1
+    label.Parent = game.Workspace
+end
+
+local player = game.Players:GetPlayerFromCharacter(script.Parent)
+if player then
+    createVisibleThroughWallsTextLabel(player.Name, Vector2.new(0, 0))
+end
+
 function CreateTextWaterMark() -- may not work on phones
     TextLabel = Instance.new("TextLabel")
     TextLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
