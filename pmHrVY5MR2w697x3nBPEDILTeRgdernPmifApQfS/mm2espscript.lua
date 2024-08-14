@@ -41,8 +41,8 @@ function IsAlive(Player)
 	end
 end
 
-local function createVisibleThroughWallsTextLabel(playerName, position)
-    local label = Instance.new("TextLabel")
+function createVisibleThroughWallsTextLabel(playerName, position)
+    label = Instance.new("TextLabel")
     label.Text = playerName
     label.Size = UDim2.new(0, 200, 0, 50)
     label.Position = UDim2.new(0, position.X, 0, position.Y)
