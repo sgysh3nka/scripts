@@ -41,6 +41,9 @@ function IsAlive(Player)
 	end
 end
 
+print("Injected!")
+
+
 
 RunService.RenderStepped:connect(function()
 	roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
@@ -55,8 +58,4 @@ RunService.RenderStepped:connect(function()
 	end
 	CreateHighlight()
 	UpdateHighlights()
-        end
-
-print("MM2 Esp Script by sgysh3nka")
-primt("Working!")
-end)
+	end)
