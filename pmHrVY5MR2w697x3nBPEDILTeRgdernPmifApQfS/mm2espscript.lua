@@ -41,7 +41,7 @@ function IsAlive(Player)
 	end
 end
 
-function CreateTextWaterMark()
+function CreateTextWaterMark() -- may not work on phones
     TextLabel = Instance.new("TextLabel")
     TextLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     TextLabel.AnchorPoint = Vector2.new(1, 0)
