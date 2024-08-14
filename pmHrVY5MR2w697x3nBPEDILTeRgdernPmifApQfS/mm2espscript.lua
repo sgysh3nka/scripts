@@ -41,6 +41,19 @@ function IsAlive(Player)
 	end
 end
 
+local function createText()
+    local TextLabel = Instance.new("TextLabel")
+    TextLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    TextLabel.AnchorPoint = Vector2.new(1, 0)
+    TextLabel.Position = UDim2.new(1, -10, 0, 10)
+    TextLabel.Size = UDim2.new(0, 200, 0, 50)
+    TextLabel.Text = "sgysh3nkaHub"
+    TextLabel.TextSize = 24
+    TextLabel.TextColor3 = Color3.new(1, 1, 1)
+    TextLabel.BackgroundTransparency = 1
+    TextLabel.ZIndex = 2
+end
+
 
 RunService.RenderStepped:connect(function()
 	roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
@@ -55,4 +68,5 @@ RunService.RenderStepped:connect(function()
 	end
 	CreateHighlight()
 	UpdateHighlights()
+	createText()
 end)
