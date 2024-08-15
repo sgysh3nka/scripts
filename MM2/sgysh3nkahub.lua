@@ -33,4 +33,3 @@ end)
 local Tab = Tab:NewSection("Contact")
 local Section = Tab:NewSection("Contact me")
 Section:NewLabel("My Discord: sgysh3nka")
-end
