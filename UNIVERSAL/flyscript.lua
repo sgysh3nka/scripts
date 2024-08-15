@@ -936,3 +936,4 @@ mini2.MouseButton1Click:Connect(function()
  closebutton.Position = UDim2.new(0, 0, -1, 27)
 
 end)
+print("Injected!")
