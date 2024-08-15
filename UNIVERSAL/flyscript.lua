@@ -272,15 +272,6 @@ nowe = false
 
  
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-
- Title = "FLY GUI MODDED";
-
- Text = "Fly gui Modded v1 by shad0w_TYLER8";
-
- Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-
-Duration = 5;
 
  
 
