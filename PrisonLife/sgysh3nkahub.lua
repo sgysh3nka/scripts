@@ -42,5 +42,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
     PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
     end)
-
-print("Injected!")
+local Tab = Tab:NewSection("Contact")
+local Section = Tab:NewSection("Contact me")
+Section:NewLabel("My Discord: sgysh3nka")
+end
