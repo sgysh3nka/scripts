@@ -1,3 +1,4 @@
+-- ONLY PC
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("sgysh3nkaHUB x MM2", "BloodTheme")
 local Tab = Window:NewTab("Player")
