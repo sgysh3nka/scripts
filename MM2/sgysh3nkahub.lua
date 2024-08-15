@@ -30,6 +30,4 @@ end)
 Section:NewButton("Fly", "You can fly (yay)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sgysh3nka/scripts/main/UNIVERSAL/flyscript.lua"))()
 end)
-local Tab = Tab:NewSection("Contact")
-local Section = Tab:NewSection("Contact me")
-Section:NewLabel("My Discord: sgysh3nka")
+-- Contact me on Discord if you need my help!
