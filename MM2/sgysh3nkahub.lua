@@ -17,11 +17,13 @@ Section:NewToggle("JumpHack", "Same with SpeedHack but jump power", function(sta
         game.Players.localPlayer.Character.Humanoid.JumpPower = 50
     end
 end)
+
 local Tab = Window:NewTab("Local")
 local Section = Tab:NewSection("i caca")
 Section:NewButton("Esp", "You can view players thru walls!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sgysh3nka/scripts/main/MM2/mm2espscript.lua"))()
 end)
+
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Something what you need")
 Section:NewButton("TP Tool", "Teleports you!", function()
